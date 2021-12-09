@@ -1,0 +1,43 @@
+<!--
+  Oficina Como Criar Coisas Inteligentes com NodeJS e Arduino - 10/12/2021
+  Feira do Polo Digital de Manaus 2021
+  Facilitador:       Orlewilson Bentes Maia
+  Data Criacao:      08/12/2021
+  Data Atualizacao:  08/12/2021
+  Descricao:         Projeto 02 – Mini Estação Meteorológica - NodeJS + Web
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projeto 02 – Mini Estação Meteorológica</title>
+    <!-- importando estilo-->
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  <body>
+    <div class="title">Temperatura</div>
+    <div>
+      <canvas id="myAreaChartTemp" width="100%" height="30"></canvas>
+    </div>
+
+    <div class="title">Umidade</div>
+    <div>
+      <canvas id="myAreaChartUmi" width="100%" height="30"></canvas>
+    </div>
+    
+    <div class="title">Luminosidade</div>
+    <div>
+      <canvas id="myAreaChartLumi" width="100%" height="30"></canvas>
+    </div>
+ 
+    <!-- biblioteca chart.js-->
+    <script src="js/Chart.min.js"></script>
+
+    <!-- importando bibliotecas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
+      
+    <!-- gráficos -->
+    <script src="js/chart-area-temp-umi-lumi.js"></script>
+  </body>
+</html>
